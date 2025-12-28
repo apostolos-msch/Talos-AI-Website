@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="UTF-8">
+        <title>Talos Startup - Επικοινωνία </title>
+        <link rel="stylesheet" href="jan2026.css">
+    </head>
+    <body class="epikoinonia-bg">
+        <header><h1>Επικοινωνία</h1></header>
+        <div class="container">
+            <nav>
+            <ul>
+                <li><a href="index.html">Αρχική</a></li>
+                <li><a href="epikoinonia.html">Επικοινωνία</a></li>
+            </ul>
+            </nav>
+                <div class="box">
+                <form id="contactForm" action="show.html" method="GET" onsubmit="return validateCheckbox()">
+                <label>Ονοματεπώνυμο</label>
+                <br>
+                <input type="text" name="fullname" required>
+                <br><label>Email</label>
+                <br><input type="email" name="email" required><br>
+                <p>Τι φύση εταιρίας είστε:</p>
+                <p>(Παρακαλώ επιλέξτε τουλάχιστον μία)</p>
+                <input type="checkbox" name="companyType" value="Δημόσιος Φορέας"> Δημόσιος Φορέας<br>
+                <input type="checkbox" name="companyType" value="Τράπεζα"> Τράπεζα<br>
+                <input type="checkbox" name="companyType" value="Ασφαλιστική Εταιρία"> Ασφαλιστική Εταιρία<br>
+                <br>                
+                <label>Μήνυμα</label>
+                <br><textarea name="message"></textarea><br>
+                <br>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Αποδέχομαι τους όρους και τις προϋποθέσεις</label><br>
+                <br>
+                <input type="submit" value="Υποβολή"><input type="reset" value="Καθαρισμός Φόρμας">
+                </form>
+
+                <script>
+                function validateCheckbox() {
+                    const checkboxes = document.querySelectorAll('input[name="companyType"]');
+                    let isChecked = false;
+                    checkboxes.forEach((checkbox) => {
+                        if (checkbox.checked) {
+                            isChecked = true;
+                        }
+                    });
+                    if (!isChecked) {
+                        alert("Παρακαλώ επιλέξτε τουλάχιστον μία φύση εταιρίας.");
+                    }
+                    return isChecked;
+                }
+                </script>
+                </div>
+            </div>
+        <footer>
+            <p>Απόστολος Μοσχούτης - Copyright (c) 2021 - ΠαΜακ</p>
+        </footer>
+    </body>   
+</html>

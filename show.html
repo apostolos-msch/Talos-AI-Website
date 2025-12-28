@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Talos Startup - Εμφάνιση Στοιχείων </title>
+    <body>
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const fullname = urlParams.get('fullname');
+            const email = urlParams.get('email');
+            const companyTypes = urlParams.getAll('companyType');
+            const message = urlParams.get('message');
+
+            document.write("<h2>Στοιχεία Επικοινωνίας</h2>");
+            document.write("<p>Εδώ θα εμφανιστούν τα στοιχεία που υποβλήθηκαν μέσω της φόρμας επικοινωνίας:</p>");
+            document.write("<p><strong>Ονοματεπώνυμο:</strong> " + fullname + "</p>");
+            document.write("<p><strong>Email:</strong> " + email + "</p>");
+            document.write("<p><strong>Φύση Εταιρίας:</strong> " + companyTypes.join(", ") + "</p>");
+            document.write("<p><strong>Μήνυμα:</strong> " + message + "</p>");
+        </script>
+    </body>
+</html>

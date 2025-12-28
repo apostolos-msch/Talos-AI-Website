@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Talos Startup - Αρχική - Mobile Version</title>
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="homePage">
+
+                <div data-role="panel" id="burgerMenu" data-display="overlay" data-position="left">
+                    <ul data-role="listview">
+                        <li data-role="list-divider">Μενού Πλοήγησης</li>
+                        <li><a href="mob_index.html" data-icon="home" data-ajax="false">Αρχική</a></li>
+                        <li><a href="mob_epikoinonia.html" data-icon="mail" data-ajax="false">Επικοινωνία</a></li>
+                    </ul>
+                </div>
+                <div data-role="header">
+                    <a href="#burgerMenu" class="ui-btn ui-btn-left ui-icon-bars ui-btn-icon-notext">Menu</a>
+                    <h1>Talos Startup</h1>
+                </div>
+                <div data-role="panel">
+                    <ul>
+                    <li><a href="mob_index.html" class="ui-btn-active ui-state-persist" data-transition="fade">Αρχική</a></li>
+                    <li><a href="mob_epikoinonia.html" data-transition="slide">Επικοινωνία</a></li>
+                    </ul>
+                </div>
+        
+                <div data-role="content"><p>Η πλατφορμα Talos φέρνει</p>
+                    <h2>Το μέλλον στην επεξεργασία εγγράφων</h2>
+                    <img src="4S0A10321.jpg" alt="Εικόνα" style="width: 100%; height: auto; border-radius: 8px; margin-bottom:10px;">
+                    <p>Η βραβευμένη με την 3η θέση στο PwC AI Hackathon πλατφόρμα μας αυτοματοποιεί τον Εξωδικαστικό Μηχανισμό χρησιμοποιώντας μια υβριδική αρχιτεκτονική Agentic AI. Το σύστημα αξιοποιεί το GPT-4o για την αντίληψη και εξαγωγή δεδομένων από έγγραφα, ενώ ένας ντετερμινιστικός αλγόριθμος Python εγγυάται απόλυτη ακρίβεια στους οικονομικούς υπολογισμούς. Μέσω τεχνολογίας RAG και σύνδεσης με τη βάση δεδομένων του ΦΕΚ 4738/2020, διασφαλίζεται η πλήρης νομική συμμόρφωση σε περιβάλλον υψηλής ασφάλειας Azure. Η λύση μειώνει δραστικά τον χρόνο επεξεργασίας φακέλων, ενσωματώνοντας τον ανθρώπινο έλεγχο (Human-in-the-Loop) για την τελική έγκριση των προτάσεων ρύθμισης. Πρόκειται για ένα κλιμακούμενο μoντέλο με επιχειρηματικό αντίκτυπο, έτοιμο για επεκτάσεις στον ευρύτερο τραπεζικό και ασφαλιστικό κλάδο.</p>
+                </div>
+                <div data-role="footer" data-position="fixed">
+                    <h3>Απόστολος Μοσχούτης - Copyright (c) 2021 - ΠαΜακ</h3>
+                </div>
+        </div>    
+    </body>
+</html>
