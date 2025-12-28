@@ -81,9 +81,9 @@ The project demonstrates a multi-layered web architecture, including standard de
 
 You can view the live versions of the project here:
 
-* **[Desktop Version](index.html)**
-* **[Responsive Version](https://www.google.com/search?q=https/apostolos-msch.github.io/Talos-AI-Website/rwd_index.html)**
-* **[Mobile Version](https://www.google.com/search?q=https://apostolos-msch.github.io/Talos-AI-Website/mob_index.html)**
+* **[Desktop Version](https://apostolos-msch.github.io/Talos-AI-Website/index.html)**
+* **[Responsive Version](https://apostolos-msch.github.io/Talos-AI-Website/rwd_index.html)**
+* **[Mobile Version](https://apostolos-msch.github.io/Talos-AI-Website/mob_index.html)**
 
 ---
 
